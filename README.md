@@ -15,15 +15,15 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Inputs:** Add three orders with arrival time `9:00`, then try to add a fourth order at `9:00`.
   - **Expected Output:** `Sorry, that time slot is full. Try another time.` The fourth order is not saved.
  
-  - ### Case 1C: Invalid Input and Error Handling
+ ### Case 1C: Invalid Input and Error Handling
   -  **Description:** Tests how the program handles wrong input.
 - **Inputs:** Letters (`abc`) at the main menu; menu choice `9`; item number `9`; quantity `0`.
 - **Expected Output:** `Invalid input. Enter a number:`, `Invalid choice, try again.`, `Invalid item number.` and `Quantity must be at least 1.` The user is asked to enter the value again each time.
 
-  ## Case 2:
+## Case 2:
 
 ## Case 3: Cancelling an Order
-  - **Description:** Tests removing an order and shifting the remaining orders up.
+- **Description:** Tests removing an order and shifting the remaining orders up.
 - **Inputs:** Menu choice `3`, order number `1`. Then menu choice `3` with order number `99`.
 - **Expected Output:** `Order cancelled.` and the remaining orders are renumbered. For `99`: `Invalid order number.`
 
@@ -49,6 +49,16 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Description:** Tests that the restaurant menu with prices can be displayed on its own.
 - **Inputs:** Menu choice `6`.
 - **Expected Output:** The menu is shown with six dishes and their prices (Alfredo Pasta Rs. 450, Beef Burger Rs. 600, Lemonade Rs. 1200, Fries Rs. 250, Cold Drink Rs. 100, Ice Cream Rs. 200).
+
+## Case 7: Saving and Loading Data
+- **Description:** Tests that orders are saved to `orders.txt` and loaded again at startup.
+- **Inputs:** Add one or more orders, choose `0` to exit, run the program again, then choose `2`.
+- **Expected Output:** Screen closes on exit. After restarting, the previously added orders are still displayed.
+
+
+# Instructions To Clone and Execute
+
+**step 1: Clone the repository**
 
 
 

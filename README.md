@@ -59,6 +59,7 @@ The Order Reservation System is a console-based program written in C that lets a
 # Instructions To Clone and Execute
 
 **step 1: Clone the repository**
+git clone  https://github.com/AdeenaFarooq/order_reservation_system.git
 
 
 

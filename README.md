@@ -70,7 +70,7 @@ cd order_reservation_system
 **Step 2: Compile the code**
 
 ```
-gcc main.c -o project
+gcc -std=c99 main.c -o project
 ```
 
 **Step 3: Run the program**

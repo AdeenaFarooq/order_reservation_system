@@ -20,7 +20,12 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Inputs:** Letters (`abc`) at the main menu; menu choice `9`; item number `9`; quantity `0`.
 - **Expected Output:** `Invalid input. Enter a number:`, `Invalid choice, try again.`, `Invalid item number.` and `Quantity must be at least 1.` The user is asked to enter the value again each time.
 
-## Case 2:
+## Case 2: Viewing Orders
+- **Description:** Checks that the program lists every saved order with its details and total.
+- **Inputs:** Menu choice `2`, after at least one order has been added.
+- **Expected Output:** Each order is printed with its number, name, item, quantity, total in rupees and arrival time.
+- **Screenshot:** ![Case 2](screenshots/case2_execution.png)
+
 
 ## Case 3: Cancelling an Order
 - **Description:** Tests removing an order and shifting the remaining orders up.
@@ -50,7 +55,13 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Inputs:** Menu choice `6`.
 - **Expected Output:** The menu is shown with six dishes and their prices (Alfredo Pasta Rs. 450, Beef Burger Rs. 600, Lemonade Rs. 1200, Fries Rs. 250, Cold Drink Rs. 100, Ice Cream Rs. 200).
 
-## Case 7: Saving and Loading Data
+ ## Case 7: Exiting the Program
+- **Description:** Checks that the program closes properly when the user chooses to exit.
+- **Inputs:** Menu choice `0`.
+- **Expected Output:** The program prints `Goodbye` and stops.
+- **Screenshot:** ![Case 6](screenshots/case6_execution.png)
+
+## Case 8: Saving and Loading Data
 - **Description:** Tests that orders are saved to `orders.txt` and loaded again at startup.
 - **Inputs:** Add one or more orders, choose `0` to exit, run the program again, then choose `2`.
 - **Expected Output:** Screen closes on exit. After restarting, the previously added orders are still displayed.

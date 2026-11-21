@@ -8,12 +8,12 @@ The Order Reservation System is a console-based program written in C that lets a
 ## Case 1: Adding and Viewing an Order
 - **Description:** Tests adding a new order from the menu and viewing it with the calculated total.
 - **Inputs:** Menu choice `1`, name `noah`, item number`1`, quantity `2`, arrival time `7:50`.
--  **Expected Output:** The menu is displayed, then `Bill: Rs. 900` and `Order added.` Viewing shows name noah, item Alfredo pasta, quantity 2, total Rs. 900, arrival 7:50.
+-  **Expected Output:** The menu is displayed, then `Bill: Rs. 900` and `[OK]Order added.` Viewing shows name noah, item Alfredo pasta, quantity 2, total Rs. 900, arrival 7:50.
 
   ### Case 1B : Time slot Full
   - **Description:** Tests that no more than 3 orders can be placed for the same arrival time.
-- **Inputs:** Add three orders with arrival time `9:00`, then try to add a fourth order at `9:00`.
-  - **Expected Output:** `Sorry, that time slot is full. Try another time.` The fourth order is not saved.
+- **Inputs:** Add three orders with arrival time `7:50`, then try to add a fourth order at `7:50`.
+  - **Expected Output:** `Sorry, the entered time slot is full. Try another time.` The fourth order is not saved.
  
  ### Case 1C: Invalid Input and Error Handling
   -  **Description:** Tests how the program handles wrong input.
@@ -24,8 +24,8 @@ The Order Reservation System is a console-based program written in C that lets a
 
 ## Case 3: Cancelling an Order
 - **Description:** Tests removing an order and shifting the remaining orders up.
-- **Inputs:** Menu choice `3`, order number `1`. Then menu choice `3` with order number `99`.
-- **Expected Output:** `Order cancelled.` and the remaining orders are renumbered. For `99`: `Invalid order number.`
+- **Inputs:** Menu choice `3`, order number `2`. Then menu choice `3` with order number `99`.
+- **Expected Output:** `[OK]Order cancelled.` and the remaining orders are renumbered. For `99`: `Invalid order number.`
 
 ### Case 3B:
 **Inputs:** Enter Menu choice`3`, order number `99`.
@@ -33,17 +33,17 @@ The Order Reservation System is a console-based program written in C that lets a
 
 ## Case 4: Editing an Order
 - **Description:** Tests changing the quantity of an existing order.
-- **Inputs:** Menu choice `4`, order number `2`, new quantity `2`.
+- **Inputs:** Menu choice `4`, order number `3`, new quantity `4`.
 - **Expected Output:** `Order updated.` Viewing the order shows quantity 2 and the recalculated total.
 
 ## Case 5: Searching by Customer Name
 - **Description:** Tests searching for orders by part of a customer name.
-- **Inputs:** Menu choice `5`, search text `Alexa`. 
-- **Expected Output:** All orders whose name contains `Ali` are displayed.
+- **Inputs:** Menu choice `5`, search text `noah`. 
+- **Expected Output:** All orders whose name contains `noah` are displayed.
 
 ### Case 5B:
 - **Input:** Enter menu choice `5` and name `zed`.
-- **Output:** For `zed`: `No matching orders.`
+- **Output:** For `zed`: `[!]No matching orders.`
 
 ## Case 6: Viewing the Menu
 - **Description:** Tests that the restaurant menu with prices can be displayed on its own.

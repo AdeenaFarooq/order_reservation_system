@@ -24,7 +24,6 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Description:** Checks that the program lists every saved order with its details and total.
 - **Inputs:** Menu choice `2`, after at least one order has been added.
 - **Expected Output:** Each order is printed with its number, name, item, quantity, total in rupees and arrival time.
-- **Screenshot:** ![Case 2](screenshots/case2_execution.png)
 
 
 ## Case 3: Cancelling an Order
@@ -59,7 +58,7 @@ The Order Reservation System is a console-based program written in C that lets a
 - **Description:** Checks that the program closes properly when the user chooses to exit.
 - **Inputs:** Menu choice `0`.
 - **Expected Output:** The program prints `Goodbye` and stops.
-- **Screenshot:** ![Case 6](screenshots/case6_execution.png)
+
 
 ## Case 8: Saving and Loading Data
 - **Description:** Tests that orders are saved to `orders.txt` and loaded again at startup.

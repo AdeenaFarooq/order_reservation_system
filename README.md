@@ -1,7 +1,7 @@
-# order_reservation_system
+# ordrly_table_hub
 
 # A. Project Introduction
-The Order Reservation System is a console-based program written in C that lets a restaurant take orders in advance. Customers choose a dish from a menu with prices, enter a quantity and an arrival time, and the program calculates the bill and reserves the order. The program supports adding, viewing, editing, cancelling and searching orders, limits how many orders can share one arrival time, validates user input, and saves all orders to a text file so they are not lost when the program closes.
+The Ordrly Table Hub is a console-based program written in C that lets a restaurant take orders in advance. Customers choose a dish from a menu with prices, enter a quantity and an arrival time, and the program calculates the bill and reserves the order. The program supports adding, viewing, editing, cancelling and searching orders, limits how many orders can share one arrival time, validates user input, and saves all orders to a text file so they are not lost when the program closes.
 
 # B. Features and Test Cases
 
@@ -73,7 +73,7 @@ The Order Reservation System is a console-based program written in C that lets a
 Open your terminal and execute:
 
 ```
-git clone  https://github.com/AdeenaFarooq/order_reservation_system.git
+git clone  https://github.com/AdeenaFarooq/ordrly_table_hub.git
 cd order_reservation_system
 ```
 

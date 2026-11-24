@@ -74,7 +74,8 @@ Open your terminal and execute:
 
 ```
 git clone  https://github.com/AdeenaFarooq/ordrly_table_hub.git
-cd order_reservation_system
+cd ordrly_table_hub
+
 ```
 
 **Step 2: Compile the code**
